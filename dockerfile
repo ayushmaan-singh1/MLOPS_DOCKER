@@ -1,5 +1,5 @@
 # Use offical python image
-FROM python:3.13-slim 
+FROM python:3.13-slim
 
 
 #Set working dir where everything will be copied and run
@@ -23,4 +23,4 @@ ENV FLASH_APP=app.py
 
 
 #Command which should automatically run after container start
-CMD ["flash", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0"]
