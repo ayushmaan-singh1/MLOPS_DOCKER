@@ -18,7 +18,7 @@ def index():
 @app.route('/greet', methods=['POST'])
 def greet():
     user_input = request.form['username']
-    return f"Hello {user_input}, Welcome to this app for Docker demonstration. Please consider like and subscribe to the channel."
+    return f"Hello {user_input}, Welcome to this app for Docker demonstration."
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
